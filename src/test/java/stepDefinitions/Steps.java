@@ -17,26 +17,27 @@ public class Steps {
     @Given("^user launches Chrome browser$")
     public void user_launches_Chrome_browser() throws Throwable {
         //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers/chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
+        /*ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
-        options.addArguments("--remote-debugging-port=9225");
+        options.addArguments("--remote-debugging-port=9225");*/
+        //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/opt/homebrew/bin/chromedriver");
         System.setProperty("webdriver.chrome.driver", "/opt/homebrew/bin/chromedriver");
         driver = new ChromeDriver();
         lp = new LoginPage(driver);
     }
 
-    @When("^user opens URL \"([^\"]*)\"$")
+    @When("^User opens URL \"([^\"]*)\"$")
     public void user_opens_url(String url) throws Throwable {
         driver.get(url);
     }
 
-    @Then("^user enters Email as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
+    @Then("^User enters Email as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
     public void user_enters_email_as_and_password_as(String user, String psd) throws Throwable {
         lp.setUserName(user);
         lp.setPassword(psd);
     }
 
-    @Then("^click on Login$")
+    @Then("^Click on Login$")
     public void click_on_login() throws Throwable {
         lp.clickLogin();
     }
@@ -47,7 +48,7 @@ public class Steps {
         System.out.println(title1);
     }
 
-    @Then("^close browser$")
+    @Then("^Close Browser$")
     public void close_browser() throws Throwable {
         driver.quit();
     }
