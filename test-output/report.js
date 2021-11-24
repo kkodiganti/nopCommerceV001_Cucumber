@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./Features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Login.feature");
 formatter.feature({
   "line": 1,
   "name": "nopcommerce Login Feature",
@@ -26,7 +26,7 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "User enters Email as \"admin@youstore.com\" and Password as \"admin\"",
+  "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
   "keyword": "And "
 });
 formatter.step({

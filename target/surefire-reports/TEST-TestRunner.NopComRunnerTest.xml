@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="TestRunner.NopComRunnerTest" time="0.117" errors="0" skipped="7">
+<testsuite tests="8" failures="0" name="TestRunner.NopComRunnerTest" time="0.076" errors="0" skipped="7">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
@@ -62,28 +62,28 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Successful login valid credentials" name="Given user launches Chrome browser" time="0.012">
+  <testcase classname="Scenario: Successful login valid credentials" name="Given user launches Chrome browser" time="0.006">
     <skipped/>
     <system-out>Feature: nopcommerce Login Feature
 </system-out>
   </testcase>
-  <testcase classname="Scenario: Successful login valid credentials" name="When User opens URL &quot;http://admin-demo.nopcommerce.com/login&quot;" time="0.015">
+  <testcase classname="Scenario: Successful login valid credentials" name="When User opens URL &quot;http://admin-demo.nopcommerce.com/login&quot;" time="0.01">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful login valid credentials" name="And User enters Email as &quot;admin@youstore.com&quot; and Password as &quot;admin&quot;" time="0.015">
+  <testcase classname="Scenario: Successful login valid credentials" name="And User enters Email as &quot;admin@youstore.com&quot; and Password as &quot;admin&quot;" time="0.01">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful login valid credentials" name="And Click on Login" time="0.015">
+  <testcase classname="Scenario: Successful login valid credentials" name="And Click on Login" time="0.01">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful login valid credentials" name="When Page Title should be &quot;Dashboard / nopCommerce administration&quot;" time="0.015">
+  <testcase classname="Scenario: Successful login valid credentials" name="When Page Title should be &quot;Dashboard / nopCommerce administration&quot;" time="0.01">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful login valid credentials" name="And Close Browser" time="0.015">
+  <testcase classname="Scenario: Successful login valid credentials" name="And Close Browser" time="0.01">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful login valid credentials" name="Scenario: Successful login valid credentials" time="0.015">
+  <testcase classname="Scenario: Successful login valid credentials" name="Scenario: Successful login valid credentials" time="0.01">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful login valid credentials" name="Scenario: Successful login valid credentials" time="0.015"/>
+  <testcase classname="Scenario: Successful login valid credentials" name="Scenario: Successful login valid credentials" time="0.01"/>
 </testsuite>

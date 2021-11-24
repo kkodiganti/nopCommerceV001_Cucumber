@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -40,12 +41,19 @@ public class Steps {
     @Then("^Click on Login$")
     public void click_on_login() throws Throwable {
         lp.clickLogin();
+        Thread.sleep(3000);
     }
 
     @Then("^Page Title should be \"([^\"]*)\"$")
     public void page_title_should_be(String title) throws Throwable {
         String title1 = driver.getTitle();
         System.out.println(title1);
+       if (driver.getPageSource().contains("Login was unsuccessful.")) {
+            driver.close();
+            Assert.assertTrue(false);
+        } else {
+            Assert.assertEquals(title, driver.getTitle());
+        }
     }
 
     @Then("^Close Browser$")
